@@ -26,7 +26,6 @@ function generateBC(url, separator) {
           s = (s.indexOf(".")>-1) ? s.substring(0,s.indexOf(".")) : s;
           if(s=="INDEX"){
             var s = urlArray[i].toUpperCase();
-            s = truncateSegment(s);
             ret += '<span class="active">'+s+'</span>';
             break;
           } else  {
